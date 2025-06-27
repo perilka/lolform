@@ -9,11 +9,42 @@
 <body>
     <h1 class="funny-title">😄 Enter Your Details! 🦄</h1>
     <form action="/submit" method="POST" class="funny-form">
-        <label for="name">Your Super Cool Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
+        <div>
+            <label for="name">Your Super Cool Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+        </div>
 
-        <label for="email">Your Awesome Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
+        <div>
+            <label for="email">Your Awesome Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+        </div>
+
+        <div>
+            <label for="color">Your Favorite Color:</label>
+            <input type="color" id="color" name="color">
+        </div>
+
+        <div>
+            <label for="profession">Your Profession:</label>
+            <select id="profession" name="profession">
+                <option value="developer">Developer</option>
+                <option value="designer">Designer</option>
+                <option value="manager">Manager</option>
+            </select>
+        </div>
+
+        <div>
+            <p>Your Hobbies:</p>
+            <label><input type="checkbox" name="hobbies" value="books"> Books</label>
+            <label><input type="checkbox" name="hobbies" value="sports"> Sports</label>
+            <label><input type="checkbox" name="hobbies" value="games"> Games</label>
+        </div>
+
+        <div>
+            <p>Your Level:</p>
+            <label><input type="radio" name="level" value="beginner"> Beginner</label>
+            <label><input type="radio" name="level" value="advanced"> Advanced</label>
+        </div>
 
         <button type="submit" class="funny-button">🚀 Let's Go!</button>
     </form>
