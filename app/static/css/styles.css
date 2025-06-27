@@ -17,6 +17,10 @@ body {
     border-radius: 20px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     transform: rotate(-2deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
 /* Заголовок */
@@ -78,11 +82,17 @@ body {
     border-radius: 20px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     transform: rotate(-2deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
+
 
 /* Поля ввода */
 .funny-form input[type="text"],
-.funny-form input[type="email"] {
+.funny-form input[type="email"],
+.funny-form select {
     width: 80%;
     padding: 10px;
     margin: 10px 0;
@@ -92,9 +102,28 @@ body {
     background-color: #fffaf0;
 }
 
+/* Чекбоксы */
+.funny-form input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 10px 5px;
+    accent-color: #ff1493;
+    vertical-align: middle;
+}
+
+/* Радиокнопки */
+.funny-form input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin: 10px 5px;
+    accent-color: #ff1493;
+    vertical-align: middle;
+}
+
 /* Поля ввода: при наведении */
 .funny-form input[type="text"]:hover,
-.funny-form input[type="email"]:hover {
+.funny-form input[type="email"]:hover,
+.funny-form select:hover {
     background-color: #ffd700;
     transform: scale(1.1);
     transition: 0.3s ease;
@@ -111,6 +140,7 @@ body {
     cursor: pointer;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     animation: bounce 1s infinite;
+    margin: 10px;
 }
 
 /* Кнопка: при наведении */
