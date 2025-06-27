@@ -7,6 +7,18 @@ body {
     padding: 0;
 }
 
+/* Контейнер для формы и сообщений */
+.funny-container {
+    margin: 50px auto;
+    padding: 20px;
+    width: 400px;
+    background-color: #ffe4e1;
+    border: 5px dashed #ff4500;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transform: rotate(-2deg);
+}
+
 /* Заголовок */
 .funny-title {
     font-size: 3rem;
@@ -16,6 +28,26 @@ body {
     animation: wobble 2s infinite;
 }
 
+/* Текст */
+.funny-text {
+    font-size: 1.5rem;
+    color: #ff4500;
+    margin: 20px 0;
+}
+
+/* Ссылка */
+.funny-link {
+    display: inline-block;
+    background-color: #ff4500;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    animation: bounce 1s infinite;
+}
+
 /* Анимация для заголовка */
 @keyframes wobble {
     0%, 100% {
@@ -23,6 +55,16 @@ body {
     }
     50% {
         transform: rotate(5deg);
+    }
+}
+
+/* Анимация для кнопки и ссылки */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
     }
 }
 
@@ -69,16 +111,6 @@ body {
     cursor: pointer;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     animation: bounce 1s infinite;
-}
-
-/* Анимация кнопки */
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
 }
 
 /* Кнопка: при наведении */

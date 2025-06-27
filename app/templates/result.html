@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <title>Submission Result</title>
 </head>
 <body>
-    <h1>Submission Successful</h1>
-    <p>Thank you, <strong>{{ name }}</strong>!</p>
-    <p>We have sent a confirmation to <strong>{{ email }}</strong>.</p>
-    <a href="/">Go back to form</a>
+    <div class="funny-container">
+        <h1 class="funny-title">Submission Successful</h1>
+        <p class="funny-text">Thank you, {{ name }}!</p>
+        <p class="funny-text">We have sent a confirmation to {{ email }}.</p>
+        <a href="/" class="funny-link">Go back to form</a>
+    </div>
 </body>
 </html>
