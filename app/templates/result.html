@@ -9,8 +9,12 @@
 <body>
     <div class="funny-container">
         <h1 class="funny-title">Submission Successful</h1>
-        <p class="funny-text">Thank you, {{ name }}!</p>
-        <p class="funny-text">We have sent a confirmation to {{ email }}.</p>
+        <p>Thank you, {{ name }}!</p>
+        <p>We have sent a confirmation to {{ email }}.</p>
+        <p>Your favorite color is: <span style="color: {{ color }}">this!</span></p>
+        <p>Your profession is: {{ profession }}.</p>
+        <p>Your hobbies: {{ hobbies | join(', ') }}.</p>
+        <p>Your level: {{ level }}.</p>
         <a href="/" class="funny-link">Go back to form</a>
     </div>
 </body>

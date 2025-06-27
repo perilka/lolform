@@ -23,6 +23,12 @@ body {
     gap: 15px;
 }
 
+.funny-container p{
+    font-size: 1.5rem;
+    color: #ff4500;
+    margin: 20px 0;
+}
+
 /* Заголовок */
 .funny-title {
     font-size: 3rem;
@@ -30,13 +36,6 @@ body {
     text-shadow: 3px 3px #ffa500;
     margin-top: 20px;
     animation: wobble 2s infinite;
-}
-
-/* Текст */
-.funny-text {
-    font-size: 1.5rem;
-    color: #ff4500;
-    margin: 20px 0;
 }
 
 /* Ссылка */
